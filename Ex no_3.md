@@ -1,44 +1,43 @@
-
-# EX 3 C program to find number of years based on principle,rate & simple interest.
+# EX 4 C program to read the age of a person and determine whether he is eligible for marriage (eligible if age ≥ 21).
 
 ## AIM:
-To write a C program to find number of years based on principle,rate & simple interest.
+To write a C program to read the age of a person and determine whether he is eligible for marriage (eligible if age ≥ 21).
 
 ## Algorithm
 1.Start the program.
 
-2.Declare variables for principal, rate, simple interest, and years.
+2.Declare a variable to store age.
 
-3.Read values of principal, rate, and simple interest.
+3.Read the age from the user.
 
-4.Use formula Years = (Simple Interest) / (Principal × Rate / 100) to compute years.
+4.Use if to check if age ≥ 21 and display eligibility.
 
-5.Display the number of years. 
+5.End the program.  
 
 ## Program:
 ```
 /*
-Program to find number of years based on principle,rate & simple interest.
+Program to read the age of a person and determine whether he is eligible for marriage (eligible if age ≥ 21).
 
 */
 
 #include <stdio.h>
 
-int main() {
-    float principal, rate, si, years;
+int main()
+{
+    int age;
     
-    printf("Enter Principal: ");
-    scanf("%f", &principal);
+    printf("Enter age: ");
+    scanf("%d", &age);
     
-    printf("Enter Rate: ");
-    scanf("%f", &rate);
-    
-    printf("Enter Simple Interest: ");
-    scanf("%f", &si);
-    
-    years = (si * 100) / (principal * rate);
-    
-    printf("Number of years = %.2f\n", years);
+    if (age >= 21)
+    {
+        printf("Eligible for marriage.\n");
+    }
+    else
+    {
+        printf("Not eligible for marriage.\n");
+    }
     
     return 0;
 }
@@ -46,7 +45,7 @@ int main() {
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/d0d9ecec-43cd-4319-90e7-7452676c0718)
+![image](https://github.com/user-attachments/assets/c4976aa9-cf55-45a9-b516-b43cf4643a7a)
 
 
 
